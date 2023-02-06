@@ -9,7 +9,8 @@ public class Resource {
 	@GET
 	@Path("/getall")
 	public void getAll() {
-		
+		CarService carService = new CarService();
+		carService.fetchData();
 	}
 	
 		
